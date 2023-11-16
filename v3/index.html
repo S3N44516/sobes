@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phone book</title>
+</head>
+<body>
+    <button id="form" onclick='form()'>Добавить контакт</button>
+    <div id='div-form'>
+    <h1>Телефонный справочник</h1>
+    <form id="add-contact-form">
+        <label for="name">ФИО</label>
+        <input type="text" id="name"><br>
+      
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone"><br>
+
+        <label for="who">Кем приходится</label>
+        <input type="text" id="who"><br>
+      
+        <button type="button" onclick="addContact()">Сохранить</button>
+       </form>
+      
+       <h2>Контакты</h2>
+       <table id="contacts-table">
+        <thead>
+        <tr>
+            <th>ФИО</th>
+            <th>Телефон</th>
+            <th>Кем приходится</th>
+            <th>Кнопки действий</th>
+        </tr>
+        </thead>
+        <tbody id="contacts-table-body">
+
+        </tbody>
+       </table>
+    </div>
+<script src="./main.js"></script>   
+</body>
+</html>
